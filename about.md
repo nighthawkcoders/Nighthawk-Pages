@@ -4,8 +4,6 @@ title: About Me
 permalink: /about/
 ---
 
-Tirth Thakkar APCSA student at DNHS  **[Tirth-Thakkar](https://github.com/Tirth-Thakkar)** [^1].
+A Fastpages clone, for CSA - Tirth Thakkar
 
 
-
-[^1] Github 
