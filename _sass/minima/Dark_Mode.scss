@@ -90,3 +90,16 @@ canvas {
 li .post-meta-description {
     color: $med-emph !important;
 }
+
+.search-result-preview{
+    color: lightgray !important; 
+}
+
+.search-result-highlight {
+    color:yellow !important;
+    font-weight:bold !important;
+}
+
+.search-results-list-item .search-result-title {
+    color: cornflowerblue !important;
+}
