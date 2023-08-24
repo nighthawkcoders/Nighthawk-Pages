@@ -27,8 +27,8 @@ $dt-green-light: rgb(172, 229, 145);
     color: $dt-gray-light;
 }
 
-.language-python + .language-plaintext code { background-color: white !important; }
-.language-python + .language-plaintext pre  { background-color: white !important; }
+.language-python + .language-plaintext code { background-color: none !important; }
+.language-python + .language-plaintext pre  { background-color: #323443 !important; }
 
 // for Jupyter Notebook HTML Code Cells modified from https://www.fast.ai/public/css/hyde.css
 
