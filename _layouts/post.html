@@ -56,11 +56,9 @@ layout: base
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-      {%- if page.toc -%}
-        {% include toc.html html=content %}
-      {%- endif -%}
-    </ul>
+    {%- if page.toc -%}
+      {% include toc.html html=content %}
+    {%- endif -%}
     {{ content }}
   </div>
   {%- if page.comments -%}
