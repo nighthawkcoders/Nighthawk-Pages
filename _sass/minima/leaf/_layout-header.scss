@@ -14,18 +14,19 @@
 
 .site-title {
     @include relative-font-size(1.625);
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-    align-items: left;
-    
+    letter-spacing: -1px !important;
+    margin-bottom: 0  !important;
+    float: left !important;
+    align-items: left !important;
+    position: fixed;
+    right: 72.5%;
 
     &:hover {
-      text-decoration: none;
+      text-decoration: none !important;
     }
   
     @include media-query($on-mobile) {
-      padding-right: 45px;
+      padding-right: 45px !important;
     }
 }
 
