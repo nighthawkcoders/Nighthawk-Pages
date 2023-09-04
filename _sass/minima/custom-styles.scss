@@ -10,6 +10,7 @@
 // @import "minima/minimal-mistakes"; //Minimal Mistakes theme if using dark highlight recommended
 // @import "minima/monophase/main";
 // @import "minima/leaf/_leaf"; // For this theme, Dark Mode and Dracula Highlight is recommended.
+// @import "minima/hamilton/main";
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
@@ -17,4 +18,10 @@
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 // If you want to use dark themes uncomment out the following lines
 // @import "minima/Mortpages-dracula-highlight"; 
-// @import "minima/Dark_Mode"
+// @import "minima/Dark_Mode";
+
+// FOR HAMILTON
+// @import "minima/hamilton/skins/daylight";
+// @import "minima/hamilton/skins/midnight";
+// @import "minima/hamilton/skins/sunrise";
+// @import "minima/hamilton/skins/sunset"
