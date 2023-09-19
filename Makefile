@@ -1,10 +1,10 @@
 # Configuration, override port with usage: make PORT=4200
 PORT ?= 4100
-REPO_NAME ?= teacher
+REPO_NAME ?= Nighthawk-Pages
 LOG_FILE = /tmp/jekyll$(PORT).log
 
 SHELL = /bin/bash
-.SHELLFLAGS = -e # Exceptions will stop make, works on MacOS
+# .SHELLFLAGS = -e # Exceptions will stop make, works on MacOS
 
 # Phony Targets, makefile housekeeping for below definitions
 .PHONY: default server convert clean stop
