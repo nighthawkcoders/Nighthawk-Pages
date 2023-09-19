@@ -30,8 +30,7 @@
 - Tags are used to organize pages by their tag the way to add tags is to add the following to your front matter such as the example seen here `categories: [C1.4]` each item in the same category will be lumped together to be seen easily on the tags page. 
 
 ### NEW FOR NIGHTHAWK-Pages - SEARCH
-
-- All pages can be searched for using the built in search bar. This search bar will search for any word in the title of the page. This allows for easily finding pages and information that you are looking for. However sometimes this may not be desirable so to hide a page from the search bar you can add `search_exclude: true` to the front matter of the page. This will hide the page from appearing when the viewer uses search. 
+- All pages can be searched for using the built in search bar. This search bar will search for any word in the title of a page or in the page itself. This allows for easily finding pages and information that you are looking for. However, sometimes this may not be desirable so to hide a page from search you can add `search_exclude: true` to the front matter of the page. This will hide the page from appearing when the viewer uses search. 
 
 ### NEW FOR NIGHTHAWK-Pages -  NAVIGATION BAR
 
@@ -50,8 +49,7 @@
 - NIGHTHAWK-Pages uses liquid to import many common page elements that are present throughout the repository. These common elements are imported from the _includes directory. If you want to add one of these common elements, use liquid syntax to import the desired element to your file. Here’s an example of liquid syntax used to import: `{%- include post_list.html -%}` Note that the liquid syntax is surrounded by curly braces and percent signs. This can be used anywhere in the repository. 
 
 ### NEW FOR NIGHTHAWK-Pages -  LAYOUTS
-
-- To create your own page layout, make your own html page inside the _layouts directory, and when you want to use that layout in a file, use the following front matter `tag: layout: [your layout here]` Using another pre-existing layout uses the same front matter syntax as defined above. This layout will have to be written in your own custom liquid defining the structure of the page. 
+- To create your own page layout, make your own html page inside the _layouts directory, and when you want to use that layout in a file, use the following front matter `layout: [your layout here]` Using another pre-existing layout uses the same front matter syntax as defined above. This layout will have to be written in your own custom liquid defining the structure of the page. 
 
 
 ### NEW FOR NIGHTHAWK-Pages - CONFIG.YML
@@ -68,11 +66,9 @@
 - Front matter (aka meta data) in ipynb and md files is used to organize information according to week and column in running web site.
 
 ## GitHub Pages
-
-All `GitHub Pages` websites are managed on GitHub infrastructure. GitHub uses `Jekyll` to tranform your content into static websites and blogs. Each time we change files in GitHub it initiates a GitHub Action that rebuilds and publishes the site with Jekyll.  
-
+All `GitHub Pages` websites are managed on GitHub infrastructure. GitHub uses `Jekyll` to transform your content into static websites and blogs. Each time we change files in GitHub it initiates a GitHub Action that rebuilds and publishes the site with Jekyll.  
 - GitHub Pages is powered by: [Jekyll](https://jekyllrb.com/).
-- Publised teacher website: [nighthawkcoders.github.io/teacher](https://nighthawkcoders.github.io/teacher/)
+- Published teacher website: [nighthawkcoders.github.io/teacher](https://nighthawkcoders.github.io/teacher/)
 
 ## Preparing a Preview Site 
 
@@ -80,7 +76,7 @@ In all development, it is recommended to test your code before deployment.  The 
 
 Development Cycle. For GitHub pages, the tooling described below will create a development cycle  `make-code-save-preview`.  In the development cycle, it is a requirement to preview work locally, prior to doing a VSCode `commit` to git.
 
-Deployment Cycle.  In the deplopyment cycle, `sync-github-action-review`, it is a requirement to complete the development cycle prior to doing a VSCode `sync`.  The sync triggers github repository update.  The action starts the jekyll build to publish the website.  Any step can have errors and will require you to do a review.
+Deployment Cycle.  In the deployment cycle, `sync-github-action-review`, it is a requirement to complete the development cycle prior to doing a VSCode `sync`.  The sync triggers github repository update.  The action starts the jekyll build to publish the website.  Any step can have errors and will require you to do a review.
 
 ### WSL and/or Ubuntu installation requirements
 
@@ -116,9 +112,8 @@ bundle install
     Server address: http://0.0.0.0:4100/teacher/
     ```
 
-  - Save on ipynb or md activiates "regeneration". Refresh browser to see updates. Example terminal message...
-
-    ```text
+    - Save on ipynb or md activiates "regeneration". Refresh browser to see updates. Example terminal message...
+    ```
     Regenerating: 1 file(s) changed at 2023-07-31 06:54:32
         _notebooks/2024-01-04-cockpit-setup.ipynb
     ```
